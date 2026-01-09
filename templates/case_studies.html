@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Case Studies</h1>
-<ul>
-  <li>Pharmaceutical Market Analytics</li>
-  <li>Banking Performance Insights</li>
-  <li>Automotive Market Analysis</li>
-</ul>
+
+{% for title, content in studies.items() %}
+  <section style="margin-bottom: 40px;">
+    <h2>{{ title }}</h2>
+    <div>{{ content | safe }}</div>
+  </section>
+{% endfor %}
+
 {% endblock %}

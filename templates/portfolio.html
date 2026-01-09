@@ -1,8 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Portfolio</h1>
+<h1>Portfolio Overview</h1>
+
 <p>
-This portfolio showcases analytics work including dashboards,
-SQL analysis, Python data preparation, and business case studies.
+This portfolio showcases real-world analytics work across multiple tools
+and industries, focused on business insights and decision support.
+</p>
+
+<ul>
+  {% for title, description in sections.items() %}
+    <li style="margin-bottom: 15px;">
+      <strong>{{ title }}</strong><br>
+      {{ description }}
+    </li>
+  {% endfor %}
+</ul>
+
+<p>
+All source code and documentation are available on GitHub.
 </p>
 {% endblock %}

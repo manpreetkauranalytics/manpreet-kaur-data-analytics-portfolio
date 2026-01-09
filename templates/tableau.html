@@ -1,11 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Tableau Dashboards</h1>
+
 <p>
-View interactive dashboards on Tableau Public.
+Interactive dashboards created using Tableau to communicate insights
+clearly to business stakeholders.
 </p>
 
-<a href="https://public.tableau.com/app/profile/manpreet.kaur7485" target="_blank">
-View Tableau Public Profile
-</a>
+<ul>
+  {% for dash in dashboards %}
+    <li style="margin-bottom: 20px;">
+      <strong>{{ dash.title }}</strong><br>
+      {{ dash.description }}<br>
+      <a href="{{ dash.link }}" target="_blank">
+        View on Tableau Public
+      </a>
+    </li>
+  {% endfor %}
+</ul>
 {% endblock %}
