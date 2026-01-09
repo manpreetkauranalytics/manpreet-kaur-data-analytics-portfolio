@@ -57,12 +57,29 @@ def contact():
     return render_template("contact.html")
 
 
-@main.route("/resume/<filename>")
+@main.route("/resume-view")
+def resume_view():
+    """Display the Australian resume"""
+    return render_template("resume.html")
+
+
+@main.route("/resume")
+def resume():
+    """Display the Australian resume"""
+    try:
+        with open(os.path.join(os.path.dirname(__file__), '..', 'resume', 'Manpreet_Kaur_Resume_AUS.html'), 'r', encoding='utf-8') as f:
+            resume_html = f.read()
+        return render_template("base.html", page_content=resume_html)
+    except:
+        return "Resume not found", 404
+
+
+@main.route("/resume/download/<filename>")
 def download_resume(filename):
-    """Serve the resume PDF"""
+    """Serve the resume PDF or HTML"""
     resume_dir = os.path.join(os.path.dirname(__file__), '..', 'resume')
     try:
-        return send_from_directory(resume_dir, filename)
+        return send_from_directory(resume_dir, filename, as_attachment=True)
     except:
         return "Resume not found", 404
 
