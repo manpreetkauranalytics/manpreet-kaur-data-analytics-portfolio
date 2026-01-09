@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manpreet Kaur | Data & BI Analyst</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+  <h2>Manpreet Kaur</h2>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/portfolio">Portfolio</a>
+    <a href="/tableau">Tableau</a>
+    <a href="/case-studies">Case Studies</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  {% block content %}{% endblock %}
+</main>
+
+<footer>
+  <p>© Manpreet Kaur | Data & BI Analyst</p>
+</footer>
+
+</body>
+</html>
