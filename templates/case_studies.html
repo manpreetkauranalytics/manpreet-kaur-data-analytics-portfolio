@@ -1,12 +1,121 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Case Studies</h1>
 
-{% for title, content in studies.items() %}
-  <section style="margin-bottom: 40px;">
-    <h2>{{ title }}</h2>
-    <div>{{ content | safe }}</div>
-  </section>
-{% endfor %}
+<div class="container">
+  <h1>📁 Case Studies</h1>
+  
+  <div class="card" style="margin-bottom: 32px;">
+    <p style="font-size: 16px; line-height: 1.8;">
+      Real-world case studies demonstrating analytical problem-solving approach across various industries. Each case study showcases the methodology, technical implementation, and business impact achieved through data-driven solutions.
+    </p>
+  </div>
+
+  {% for title, content in studies.items() %}
+    <div class="card" style="margin-bottom: 32px; border-left: 4px solid #6366f1;">
+      <h2>{{ title }}</h2>
+      <div style="margin-top: 24px;">
+        {{ content | safe }}
+      </div>
+      <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid #e2e8f0;">
+        <a href="/contact" class="btn btn-secondary">Discuss This Case Study</a>
+      </div>
+    </div>
+  {% endfor %}
+
+  <!-- Methodology -->
+  <div class="card" style="margin-top: 40px; background: linear-gradient(135deg, #f0f9ff 0%, #f0fdf4 100%);">
+    <h2>🎯 Our Analytical Approach</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 24px;">
+      
+      <div>
+        <h4>1️⃣ Requirement Gathering</h4>
+        <p>Deep dive into business challenges, objectives, and success criteria. Understand stakeholder needs and constraints.</p>
+      </div>
+
+      <div>
+        <h4>2️⃣ Data Exploration</h4>
+        <p>Analyse available data sources, quality assessment, and identify relevant data elements for analysis.</p>
+      </div>
+
+      <div>
+        <h4>3️⃣ Analysis & Modelling</h4>
+        <p>Develop analytical framework, build models, and derive insights from data to address business questions.</p>
+      </div>
+
+      <div>
+        <h4>4️⃣ Visualisation</h4>
+        <p>Create clear, intuitive dashboards and reports that communicate findings to stakeholders effectively.</p>
+      </div>
+
+      <div>
+        <h4>5️⃣ Recommendations</h4>
+        <p>Translate insights into actionable recommendations aligned with business strategy and objectives.</p>
+      </div>
+
+      <div>
+        <h4>6️⃣ Implementation</h4>
+        <p>Work with teams to implement solutions and establish ongoing monitoring and reporting processes.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Industries -->
+  <div class="card" style="margin-top: 24px;">
+    <h2>🏢 Industry Experience</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 24px;">
+      
+      <div style="padding: 20px; background: #f0f9ff; border-radius: 8px; border-left: 4px solid #0ea5e9;">
+        <h4>💊 Pharmaceutical</h4>
+        <p style="font-size: 14px; margin: 0;">Clinical trials, market access, supply chain, competitive intelligence, sales forecasting.</p>
+      </div>
+
+      <div style="padding: 20px; background: #fef2f2; border-radius: 8px; border-left: 4px solid #ef4444;">
+        <h4>🏦 Banking & Finance</h4>
+        <p style="font-size: 14px; margin: 0;">Risk management, customer profiling, financial reporting, fraud detection, portfolio analysis.</p>
+      </div>
+
+      <div style="padding: 20px; background: #fef3c7; border-radius: 8px; border-left: 4px solid #f59e0b;">
+        <h4>🚗 Automotive</h4>
+        <p style="font-size: 14px; margin: 0;">Market trends, dealer performance, customer behaviour, inventory management, sales analytics.</p>
+      </div>
+
+      <div style="padding: 20px; background: #f0fdf4; border-radius: 8px; border-left: 4px solid #10b981;">
+        <h4>🛒 FMCG & Retail</h4>
+        <p style="font-size: 14px; margin: 0;">Sales trends, customer insights, product performance, supply chain, promotional analysis.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Key Achievements -->
+  <div class="card" style="margin-top: 24px; background: linear-gradient(135deg, #6366f1 0%, #0ea5e9 100%); color: white;">
+    <h2 style="color: white; margin-bottom: 24px;">🎯 Key Achievements</h2>
+    
+    <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
+      <li style="padding: 0; margin-bottom: 0;">
+        <strong>50+ Projects Delivered</strong><br>
+        <span style="font-size: 14px; opacity: 0.9;">Successful completion across multiple industries and complexity levels.</span>
+      </li>
+      <li style="padding: 0; margin-bottom: 0;">
+        <strong>15+ Global Clients</strong><br>
+        <span style="font-size: 14px; opacity: 0.9;">Fortune 500 companies and mid-market organisations.</span>
+      </li>
+      <li style="padding: 0; margin-bottom: 0;">
+        <strong>10+ Years Experience</strong><br>
+        <span style="font-size: 14px; opacity: 0.9;">Deep domain knowledge and technical expertise.</span>
+      </li>
+      <li style="padding: 0; margin-bottom: 0;">
+        <strong>95%+ Success Rate</strong><br>
+        <span style="font-size: 14px; opacity: 0.9;">On-time delivery, quality output, client satisfaction.</span>
+      </li>
+    </ul>
+
+    <a href="/contact" class="btn btn-primary" style="background: white; color: #6366f1; display: inline-block; margin-top: 24px;">Let's Discuss Your Project</a>
+  </div>
+
+</div>
 
 {% endblock %}

@@ -1,20 +1,154 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Contact</h1>
 
-<p>
-If you would like to discuss opportunities or collaborations,
-please feel free to get in touch.
-</p>
+<div class="container">
+  <h1>Get in Touch</h1>
 
-<ul>
-  <li>Email: <a href="mailto:manpreet.kaur@outlook.com">manpreet.kaur@outlook.com</a></li>
-  <li>Location: Melbourne, Australia</li>
-  <li>
-    Tableau Public:
-    <a href="https://public.tableau.com/app/profile/manpreet.kaur7485" target="_blank">
-      View Profile
-    </a>
-  </li>
-</ul>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; margin-bottom: 40px;">
+    
+    <!-- Contact Info -->
+    <div class="card">
+      <h3>📍 Location</h3>
+      <p>
+        <strong>Melbourne, Victoria</strong><br>
+        Australia
+      </p>
+      <p style="color: #64748b; font-size: 14px;">
+        Available for consulting, contract work, and permanent roles.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📧 Email</h3>
+      <p>
+        <a href="mailto:manpreet.kaur@outlook.com" style="font-size: 16px; font-weight: 600;">
+          manpreet.kaur@outlook.com
+        </a>
+      </p>
+      <p style="color: #64748b; font-size: 14px;">
+        Typically respond within 24 hours.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📊 Tableau Public</h3>
+      <p>
+        <a href="https://public.tableau.com/app/profile/manpreet.kaur7485" target="_blank" style="font-size: 16px; font-weight: 600;">
+          View My Dashboards
+        </a>
+      </p>
+      <p style="color: #64748b; font-size: 14px;">
+        Explore my latest Tableau work and visualisations.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Download Resume -->
+  <div class="card" style="background: linear-gradient(135deg, #f0f9ff 0%, #f0fdf4 100%); border-left: 4px solid #6366f1; margin-bottom: 40px;">
+    <h3 style="margin-bottom: 12px;">📄 Resume / CV</h3>
+    <p>View and download my detailed CV to learn more about my professional experience, skills, and achievements.</p>
+    <a href="/resume/Manpreet Kaur Analyst Detailed CV.pdf" target="_blank" class="btn btn-primary" style="display: inline-block; margin-top: 12px;">Download CV (PDF)</a>
+  </div>
+
+  <!-- Quick Message -->
+  <div class="card">
+    <h3>💬 Quick Message</h3>
+    <p style="margin-bottom: 24px;">Have a question or project in mind? Feel free to send a message directly:</p>
+    
+    <form action="mailto:manpreet.kaur@outlook.com" method="POST" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="Full name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required placeholder="Project inquiry, consultation, etc.">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Tell me about your project or question..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+    
+    <p style="font-size: 12px; color: #94a3b8; margin-top: 16px;">
+      💡 Note: This opens your default email client. Alternatively, email me directly at manpreet.kaur@outlook.com
+    </p>
+  </div>
+
+  <!-- Professional Summary -->
+  <div class="card" style="margin-top: 40px; background: #f8fafc;">
+    <h3>🎯 What I Do</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 24px;">
+      
+      <div>
+        <h4>📊 Dashboard Development</h4>
+        <p>Design and build Tableau/Power BI dashboards that drive business decisions and provide clear insights.</p>
+      </div>
+
+      <div>
+        <h4>🧮 Data Analytics</h4>
+        <p>SQL queries, data analysis, and reporting for business intelligence and performance monitoring.</p>
+      </div>
+
+      <div>
+        <h4>🐍 Data Engineering</h4>
+        <p>Python-based data cleaning, transformation, and pipeline development for analytics workflows.</p>
+      </div>
+
+      <div>
+        <h4>👥 Stakeholder Management</h4>
+        <p>Translate business requirements into technical solutions with clear communication and delivery.</p>
+      </div>
+
+      <div>
+        <h4>💼 Technical Leadership</h4>
+        <p>Guide teams, mentor analysts, and architect enterprise-level analytics solutions.</p>
+      </div>
+
+      <div>
+        <h4>🌍 Industry Expertise</h4>
+        <p>Specialising in pharma, banking, automotive, FMCG, and IT sectors across Australia and globally.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Why Hire Me -->
+  <div class="card" style="margin-top: 24px; background: linear-gradient(135deg, #6366f1 0%, #0ea5e9 100%); color: white;">
+    <h2 style="color: white; margin-bottom: 24px;">🚀 Why Work Together?</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+      <div>
+        <h4 style="color: white;">✓ Deep Expertise</h4>
+        <p>10+ years delivering analytics solutions across multiple industries.</p>
+      </div>
+      <div>
+        <h4 style="color: white;">✓ Quality Focused</h4>
+        <p>Attention to detail with focus on performance, usability, and business impact.</p>
+      </div>
+      <div>
+        <h4 style="color: white;">✓ Communicative</h4>
+        <p>Clear communication of technical concepts to non-technical stakeholders.</p>
+      </div>
+      <div>
+        <h4 style="color: white;">✓ Results Driven</h4>
+        <p>Committed to delivering measurable business value with every project.</p>
+      </div>
+    </div>
+
+    <a href="mailto:manpreet.kaur@outlook.com" class="btn btn-primary" style="background: white; color: #6366f1; display: inline-block; margin-top: 24px;">Start a Conversation</a>
+  </div>
+
+</div>
+
 {% endblock %}

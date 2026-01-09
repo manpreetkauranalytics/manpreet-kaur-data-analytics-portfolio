@@ -2,28 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Manpreet Kaur | Data & BI Analyst</title>
+  <title>Manpreet Kaur | Data & BI Analyst | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manpreet Kaur - Senior Data & BI Analyst specialising in Tableau, Power BI, SQL, and Python. Based in Melbourne, Australia.">
+  <meta name="keywords" content="Data Analyst, BI Analyst, Tableau, Power BI, SQL, Python, Melbourne, Australia">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
-<header>
-  <h2>Manpreet Kaur</h2>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/portfolio">Portfolio</a>
-    <a href="/tableau">Tableau</a>
-    <a href="/case-studies">Case Studies</a>
-    <a href="/contact">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <div class="brand">
+        <h1 class="brand-name">Manpreet Kaur</h1>
+        <p class="brand-title">Data & BI Analyst</p>
+      </div>
+      <nav class="main-nav">
+        <a href="/" class="nav-link {% if request.path == '/' %}active{% endif %}">Home</a>
+        <a href="/portfolio" class="nav-link {% if request.path == '/portfolio' %}active{% endif %}">Portfolio</a>
+        <a href="/tableau" class="nav-link {% if request.path == '/tableau' %}active{% endif %}">Dashboards</a>
+        <a href="/case-studies" class="nav-link {% if request.path == '/case-studies' %}active{% endif %}">Case Studies</a>
+        <a href="/contact" class="nav-link {% if request.path == '/contact' %}active{% endif %}">Contact</a>
+      </nav>
+    </div>
+  </div>
 </header>
 
 <main>
   {% block content %}{% endblock %}
 </main>
 
-<footer>
-  <p>© Manpreet Kaur | Data & BI Analyst</p>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2024-2026 Manpreet Kaur | Melbourne, Australia | All rights reserved</p>
+  </div>
 </footer>
 
 </body>

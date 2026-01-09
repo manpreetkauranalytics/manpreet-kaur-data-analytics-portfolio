@@ -1,22 +1,170 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Portfolio Overview</h1>
 
-<p>
-This portfolio showcases real-world analytics work across multiple tools
-and industries, focused on business insights and decision support.
-</p>
+<div class="container">
+  <h1>Portfolio Overview</h1>
+  
+  <div class="card">
+    <p style="font-size: 16px; line-height: 1.8;">
+      This portfolio showcases real-world analytics work focused on business insights, stakeholder reporting, and data-driven decision support. Each section represents different technical competencies and industry domains where solutions have been delivered.
+    </p>
+  </div>
 
-<ul>
-  {% for title, description in sections.items() %}
-    <li style="margin-bottom: 15px;">
-      <strong>{{ title }}</strong><br>
-      {{ description }}
-    </li>
-  {% endfor %}
-</ul>
+  <!-- Portfolio Sections -->
+  <div class="project-grid">
+    
+    <!-- Tableau Section -->
+    <div class="project-card">
+      <span class="badge">Data Visualisation</span>
+      <h3 class="project-title">📊 Tableau Dashboards</h3>
+      <p class="project-description">
+        Interactive dashboards demonstrating data storytelling and business insights. Real dashboards covering KPI tracking, performance reporting, and executive summaries.
+      </p>
+      <ul class="project-achievements">
+        <li>Executive dashboards with drill-through capabilities</li>
+        <li>Tableau Server administration and publishing</li>
+        <li>Performance optimisation and data model design</li>
+        <li>Stakeholder engagement and requirement translation</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">Tableau Desktop</span>
+        <span class="tag secondary">Tableau Server</span>
+        <span class="tag accent">Analytics</span>
+      </div>
+      <a href="/tableau" class="btn btn-primary" style="display: block; text-align: center; margin-top: 16px;">View Dashboards</a>
+    </div>
 
-<p>
-All source code and documentation are available on GitHub.
-</p>
+    <!-- SQL Section -->
+    <div class="project-card">
+      <span class="badge">Database & Reporting</span>
+      <h3 class="project-title">🧮 SQL Analytics</h3>
+      <p class="project-description">
+        Business-focused SQL queries designed for real-world reporting, KPI tracking, and performance analysis. Demonstrates complex joins, aggregations, and optimised queries.
+      </p>
+      <ul class="project-achievements">
+        <li>Complex multi-table joins and CTEs</li>
+        <li>Query performance optimisation</li>
+        <li>Reporting and business analytics</li>
+        <li>Data validation and quality checks</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">SQL Server</span>
+        <span class="tag secondary">Reporting</span>
+        <span class="tag accent">Analytics</span>
+      </div>
+      <a href="/portfolio" class="btn btn-secondary" style="display: block; text-align: center; margin-top: 16px;">View SQL Samples</a>
+    </div>
+
+    <!-- Python Section -->
+    <div class="project-card">
+      <span class="badge">Data Engineering</span>
+      <h3 class="project-title">🐍 Python Data Analysis</h3>
+      <p class="project-description">
+        Practical examples of data cleaning, transformation, and preparation using Python and Pandas. Designed to support analytics pipelines and dashboarding workflows.
+      </p>
+      <ul class="project-achievements">
+        <li>Data cleaning and validation</li>
+        <li>Pandas transformations and aggregations</li>
+        <li>Data quality assurance</li>
+        <li>Automation of repetitive tasks</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag secondary">Pandas</span>
+        <span class="tag accent">Data Cleaning</span>
+      </div>
+      <a href="/portfolio" class="btn btn-secondary" style="display: block; text-align: center; margin-top: 16px;">View Python Examples</a>
+    </div>
+
+    <!-- Case Studies Section -->
+    <div class="project-card">
+      <span class="badge">Industry Applications</span>
+      <h3 class="project-title">📁 Case Studies</h3>
+      <p class="project-description">
+        Industry-based analytical case studies across pharma, banking, and automotive domains. Real-world problems and solutions demonstrating analytical approach and business impact.
+      </p>
+      <ul class="project-achievements">
+        <li>Pharma market and supply chain analytics</li>
+        <li>Banking customer and financial analytics</li>
+        <li>Automotive market and performance analysis</li>
+        <li>Business problem-solving methodology</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">Pharma</span>
+        <span class="tag secondary">Banking</span>
+        <span class="tag accent">Automotive</span>
+      </div>
+      <a href="/case-studies" class="btn btn-primary" style="display: block; text-align: center; margin-top: 16px;">Explore Case Studies</a>
+    </div>
+
+  </div>
+
+  <!-- Technical Stack -->
+  <div class="card" style="margin-top: 40px;">
+    <h2>🛠 Technical Stack</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-top: 24px;">
+      <div>
+        <h4>Visualisation & BI</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li>✓ Tableau (Desktop & Server)</li>
+          <li>✓ Power BI</li>
+          <li>✓ Excel (Advanced, VBA)</li>
+          <li>✓ SSAS</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Database & SQL</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li>✓ SQL Server</li>
+          <li>✓ MySQL</li>
+          <li>✓ PostgreSQL</li>
+          <li>✓ Data Modelling</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Programming</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li>✓ Python (Pandas, NumPy)</li>
+          <li>✓ VBA/Macros</li>
+          <li>✓ JSON/XML</li>
+          <li>✓ Scripting</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Business Skills</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li>✓ Requirement Gathering</li>
+          <li>✓ Stakeholder Management</li>
+          <li>✓ Report Design</li>
+          <li>✓ Project Leadership</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Industry Experience -->
+  <div class="card" style="margin-top: 24px;">
+    <h2>💼 Industry Experience</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 24px;">
+      <div style="padding: 16px; background: #f0f9ff; border-radius: 8px; border-left: 4px solid #6366f1;">
+        <h4>Pharmaceutical</h4>
+        <p style="font-size: 14px; margin: 0;">Market analysis, supply chain optimisation, clinical trial support.</p>
+      </div>
+      <div style="padding: 16px; background: #f0fdf4; border-radius: 8px; border-left: 4px solid #10b981;">
+        <h4>FMCG & Retail</h4>
+        <p style="font-size: 14px; margin: 0;">Sales analytics, inventory management, customer insights.</p>
+      </div>
+      <div style="padding: 16px; background: #fef2f2; border-radius: 8px; border-left: 4px solid #ef4444;">
+        <h4>Banking & Finance</h4>
+        <p style="font-size: 14px; margin: 0;">Risk analysis, customer profiling, financial reporting.</p>
+      </div>
+      <div style="padding: 16px; background: #fef3c7; border-radius: 8px; border-left: 4px solid #f59e0b;">
+        <h4>Automotive</h4>
+        <p style="font-size: 14px; margin: 0;">Market trends, dealer performance, supply analytics.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 {% endblock %}

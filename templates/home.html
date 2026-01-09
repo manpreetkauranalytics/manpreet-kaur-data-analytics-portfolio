@@ -1,6 +1,153 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="content">
-  {{ content | safe }}
-</div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Manpreet Kaur</h1>
+      <p class="hero-subtitle">Senior Data & BI Analyst</p>
+      <p class="hero-description">
+        Delivering impactful business intelligence and data analytics solutions. Specialising in Tableau, Power BI, SQL, and Python analytics across pharma, FMCG, banking, automotive, and IT sectors. Based in Melbourne, Australia.
+      </p>
+      <div class="btn-group">
+        <a href="/portfolio" class="btn btn-primary">View Portfolio</a>
+        <a href="/contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Metrics -->
+<section class="container">
+  <div class="metrics">
+    <div class="metric-card">
+      <div class="metric-value">10+</div>
+      <div class="metric-label">Years Experience</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">50+</div>
+      <div class="metric-label">Projects Delivered</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">15+</div>
+      <div class="metric-label">Global Clients</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">6</div>
+      <div class="metric-label">Core Competencies</div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Expertise -->
+<section class="container">
+  <div class="card">
+    <h2>🛠 Core Expertise</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 24px;">
+      
+      <div>
+        <h3>📊 Data Visualisation</h3>
+        <p>Creating compelling Tableau and Power BI dashboards that drive business decisions with clear, actionable insights.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="tag">Tableau Desktop</span>
+          <span class="tag secondary">Power BI</span>
+          <span class="tag accent">Dashboarding</span>
+        </div>
+      </div>
+
+      <div>
+        <h3>🧮 SQL & Database</h3>
+        <p>Expert-level SQL writing for complex reporting, performance tuning, and business analytics across relational databases.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="tag">SQL Server</span>
+          <span class="tag secondary">Query Optimisation</span>
+          <span class="tag accent">Reporting</span>
+        </div>
+      </div>
+
+      <div>
+        <h3>🐍 Python Analytics</h3>
+        <p>Data cleaning, transformation, and preparation using Pandas. Building data pipelines and automating analytics workflows.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="tag">Pandas</span>
+          <span class="tag secondary">Data Cleaning</span>
+          <span class="tag accent">Automation</span>
+        </div>
+      </div>
+
+      <div>
+        <h3>📈 Business Analytics</h3>
+        <p>End-to-end analytics: requirement gathering, data modelling, dashboard design, and stakeholder reporting.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="tag">Requirements</span>
+          <span class="tag secondary">Data Modelling</span>
+          <span class="tag accent">Stakeholder Mgmt</span>
+        </div>
+      </div>
+
+      <div>
+        <h3>💼 Technical Leadership</h3>
+        <p>Mentoring teams, managing Tableau Server environments, and delivering enterprise-scale analytics solutions.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="tag">Tableau Server</span>
+          <span class="tag secondary">Team Mentoring</span>
+          <span class="tag accent">Architecture</span>
+        </div>
+      </div>
+
+      <div>
+        <h3>🎯 Industry Expertise</h3>
+        <p>Deep domain knowledge across pharma, FMCG, banking, automotive, and IT sectors with proven delivery track record.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="tag">Pharma</span>
+          <span class="tag secondary">Banking</span>
+          <span class="tag accent">Automotive</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Highlight -->
+<section class="container">
+  <div class="card">
+    <h2>🎯 Featured Work</h2>
+    
+    <div class="project-grid">
+      <div class="project-card">
+        <h3 class="project-title">Tableau Dashboards</h3>
+        <p class="project-description">Interactive, business-focused dashboards demonstrating data storytelling and executive reporting capabilities.</p>
+        <div style="flex-grow: 1;"></div>
+        <a href="/tableau" class="btn btn-primary" style="display: block; text-align: center;">Explore Dashboards</a>
+      </div>
+
+      <div class="project-card">
+        <h3 class="project-title">Analytics Case Studies</h3>
+        <p class="project-description">Real-world case studies from pharma, banking, and automotive sectors showcasing problem-solving approach.</p>
+        <div style="flex-grow: 1;"></div>
+        <a href="/case-studies" class="btn btn-primary" style="display: block; text-align: center;">View Case Studies</a>
+      </div>
+
+      <div class="project-card">
+        <h3 class="project-title">SQL & Python</h3>
+        <p class="project-description">Business-focused SQL queries and Python data analysis examples from real-world projects.</p>
+        <div style="flex-grow: 1;"></div>
+        <a href="/portfolio" class="btn btn-primary" style="display: block; text-align: center;">View Samples</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="container">
+  <div class="card" style="background: linear-gradient(135deg, #6366f1 0%, #0ea5e9 100%); color: white; text-align: center;">
+    <h2 style="color: white; margin-bottom: 12px;">Ready to Transform Your Data?</h2>
+    <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 24px;">Let's discuss how data analytics can drive your business forward.</p>
+    <a href="/contact" class="btn btn-primary" style="background: white; color: #6366f1;">Get in Touch</a>
+  </div>
+</section>
+
 {% endblock %}

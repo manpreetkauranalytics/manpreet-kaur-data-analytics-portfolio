@@ -1,21 +1,138 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Tableau Dashboards</h1>
 
-<p>
-Interactive dashboards created using Tableau to communicate insights
-clearly to business stakeholders.
-</p>
+<div class="container">
+  <h1>📊 Tableau Dashboards & Visualisations</h1>
+  
+  <div class="card" style="margin-bottom: 32px;">
+    <p style="font-size: 16px; line-height: 1.8;">
+      A curated collection of Tableau dashboards demonstrating data storytelling, executive reporting, and business intelligence capabilities. These dashboards showcase real-world applications across various industries with focus on user experience, performance, and actionable insights.
+    </p>
+  </div>
 
-<ul>
-  {% for dash in dashboards %}
-    <li style="margin-bottom: 20px;">
-      <strong>{{ dash.title }}</strong><br>
-      {{ dash.description }}<br>
-      <a href="{{ dash.link }}" target="_blank">
-        View on Tableau Public
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+  <div class="project-grid">
+    {% for dash in dashboards %}
+      <div class="project-card">
+        <span class="badge">{{ dash.category | default('Dashboard', true) }}</span>
+        <h3 class="project-title">{{ dash.title }}</h3>
+        <p class="project-description">{{ dash.description }}</p>
+        
+        {% if dash.features %}
+        <ul class="project-achievements">
+          {% for feature in dash.features %}
+            <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if dash.tags %}
+        <div class="project-tags">
+          {% for tag in dash.tags %}
+            <span class="tag {% if loop.index % 3 == 2 %}secondary{% elif loop.index % 3 == 0 %}accent{% endif %}">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <a href="{{ dash.link }}" target="_blank" class="btn btn-primary" style="display: block; text-align: center; margin-top: 16px;">View on Tableau Public</a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Additional Resources -->
+  <div class="card" style="margin-top: 40px; background: linear-gradient(135deg, #f0f9ff 0%, #f0fdf4 100%);">
+    <h2>📈 Dashboard Features & Best Practices</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 24px;">
+      
+      <div>
+        <h4>🎯 Executive Reporting</h4>
+        <p>High-level KPI dashboards designed for C-suite decision makers. Focus on key metrics, trends, and actionable insights.</p>
+      </div>
+
+      <div>
+        <h4>📊 Operational Analytics</h4>
+        <p>Detailed operational dashboards for team managers. Include drill-through capabilities, filters, and performance tracking.</p>
+      </div>
+
+      <div>
+        <h4>🔍 Deep Dive Analysis</h4>
+        <p>Comprehensive analytical dashboards for analysts. Support complex filtering, multi-dimensional analysis, and data exploration.</p>
+      </div>
+
+      <div>
+        <h4>⚡ Performance Optimised</h4>
+        <p>All dashboards are optimised for performance with efficient queries, appropriate visualisations, and minimal load times.</p>
+      </div>
+
+      <div>
+        <h4>🎨 User-Centric Design</h4>
+        <p>Clean, intuitive design following Tableau best practices. Consistent colour schemes, clear labelling, and logical flow.</p>
+      </div>
+
+      <div>
+        <h4>📱 Responsive & Accessible</h4>
+        <p>Dashboards are responsive across devices and designed with accessibility in mind for all users.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Tableau Expertise -->
+  <div class="card" style="margin-top: 24px;">
+    <h2>🛠 Tableau Expertise</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-top: 24px;">
+      
+      <div>
+        <h4>Tableau Desktop</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li>✓ Dashboard design & development</li>
+          <li>✓ Complex calculations & LOD expressions</li>
+          <li>✓ Data source configuration</li>
+          <li>✓ Performance tuning</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Tableau Server</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li>✓ Administration & management</li>
+          <li>✓ User provisioning & permissions</li>
+          <li>✓ Content distribution</li>
+          <li>✓ Performance monitoring</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Data Modelling</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li>✓ Star schema design</li>
+          <li>✓ Dimension & fact tables</li>
+          <li>✓ Relationships & joins</li>
+          <li>✓ Aggregation planning</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Business Intelligence</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li>✓ KPI development</li>
+          <li>✓ Business metric definition</li>
+          <li>✓ Stakeholder engagement</li>
+          <li>✓ Requirement translation</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="card" style="margin-top: 40px; background: linear-gradient(135deg, #6366f1 0%, #0ea5e9 100%); color: white; text-align: center;">
+    <h2 style="color: white;">Interested in a Custom Dashboard?</h2>
+    <p style="color: rgba(255, 255, 255, 0.9);">Let's discuss how Tableau can unlock insights in your data.</p>
+    <a href="/contact" class="btn btn-primary" style="background: white; color: #6366f1; margin-top: 16px;">Contact Me Today</a>
+  </div>
+
+</div>
+
 {% endblock %}

@@ -1,5 +1,6 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, send_from_directory
 from .data_loader import load_markdown
+import os
 
 main = Blueprint("main", __name__)
 
@@ -25,7 +26,15 @@ def tableau():
     dashboards = [
         {
             "title": "Professional CV Dashboard",
-            "description": "Visual summary of professional experience, skills, and industry exposure.",
+            "description": "Visual summary of professional experience, skills, certifications, and industry exposure.",
+            "category": "Executive Summary",
+            "features": [
+                "Interactive experience timeline",
+                "Skills proficiency matrix",
+                "Industry & technology breakdown",
+                "Project portfolio overview"
+            ],
+            "tags": ["Tableau", "CV", "Professional"],
             "link": "https://public.tableau.com/app/profile/manpreet.kaur7485"
         }
     ]
@@ -46,4 +55,15 @@ def case_studies():
 @main.route("/contact")
 def contact():
     return render_template("contact.html")
+
+
+@main.route("/resume/<filename>")
+def download_resume(filename):
+    """Serve the resume PDF"""
+    resume_dir = os.path.join(os.path.dirname(__file__), '..', 'resume')
+    try:
+        return send_from_directory(resume_dir, filename)
+    except:
+        return "Resume not found", 404
+
 
