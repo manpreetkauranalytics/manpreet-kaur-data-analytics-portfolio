@@ -1,557 +1,552 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manpreet Kaur - AI & Data Engineering Resume (Australia)</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #2c3e50;
-            background: #f5f7fa;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .header .title {
-            font-size: 1.2em;
-            font-weight: 300;
-            margin-bottom: 15px;
-        }
-        
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            font-size: 0.95em;
-        }
-        
-        .contact-info span {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .content {
-            padding: 30px;
-        }
-        
-        .section {
-            margin-bottom: 35px;
-        }
-        
-        .section-title {
-            font-size: 1.3em;
-            color: #667eea;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .entry {
-            margin-bottom: 25px;
-        }
-        
-        .entry-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 8px;
-        }
-        
-        .entry-title {
-            font-size: 1.1em;
-            font-weight: 600;
-            color: #2c3e50;
-        }
-        
-        .entry-subtitle {
-            color: #667eea;
-            font-weight: 500;
-            font-size: 0.95em;
-        }
-        
-        .entry-date {
-            color: #7f8c8d;
-            font-size: 0.9em;
-            white-space: nowrap;
-        }
-        
-        .entry-description {
-            color: #555;
-            margin-top: 8px;
-            line-height: 1.7;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-        
-        .skill-category {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-        }
-        
-        .skill-category h4 {
-            color: #667eea;
-            margin-bottom: 10px;
-            font-size: 0.95em;
-            text-transform: uppercase;
-        }
-        
-        .skill-list {
-            list-style: none;
-        }
-        
-        .skill-list li {
-            color: #555;
-            padding: 4px 0;
-            font-size: 0.9em;
-        }
-        
-        .skill-list li:before {
-            content: "▸ ";
-            color: #667eea;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-        
-        .achievements {
-            background: #f0f4ff;
-            border-left: 4px solid #667eea;
-            padding: 15px;
-            border-radius: 4px;
-            margin-top: 15px;
-        }
-        
-        .achievements h4 {
-            color: #667eea;
-            margin-bottom: 10px;
-            font-size: 0.95em;
-        }
-        
-        .achievements ul {
-            list-style-position: inside;
-            color: #555;
-            font-size: 0.9em;
-        }
-        
-        .achievements li {
-            margin-bottom: 6px;
-        }
-        
-        .certifications {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        
-        .cert-card {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            border-top: 3px solid #667eea;
-            text-align: center;
-        }
-        
-        .cert-card h4 {
-            color: #2c3e50;
-            font-size: 0.9em;
-            margin-bottom: 5px;
-        }
-        
-        .cert-card p {
-            color: #7f8c8d;
-            font-size: 0.85em;
-        }
-        
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2em;
-            }
-            
-            .entry-header {
-                flex-direction: column;
-            }
-            
-            .entry-date {
-                margin-top: 5px;
-            }
-            
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-        
-        @page {
-            margin: 0.5cm;
-        }
-        
-        .print-only {
-            display: none;
-        }
-        
-        @media print {
-            body {
-                background: white;
-            }
-            
-            .container {
-                box-shadow: none;
-                max-width: 100%;
-            }
-            
-            .print-only {
-                display: block;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manpreet Kaur - Data Analyst & Business Intelligence Specialist | Australia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: #f5f5f5;
+    }
+    .resume-container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    /* Header */
+    .resume-header {
+      background: linear-gradient(135deg, #6366f1 0%, #0ea5e9 100%);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+    }
+    .resume-header h1 {
+      font-size: 42px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .resume-header .title {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      opacity: 0.95;
+    }
+    .resume-header .contact-info {
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      opacity: 0.9;
+    }
+    .resume-header .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    /* Main Content */
+    .resume-content {
+      padding: 30px;
+    }
+    .section {
+      margin-bottom: 28px;
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #6366f1;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 2px solid #6366f1;
+      padding-bottom: 10px;
+      margin-bottom: 16px;
+    }
+    /* Professional Summary */
+    .professional-summary {
+      background: #f0f4ff;
+      padding: 16px;
+      border-left: 4px solid #6366f1;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      font-size: 14px;
+      color: #444;
+    }
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .skill-category {
+      background: #f9f9f9;
+      padding: 14px;
+      border-radius: 6px;
+      border-left: 3px solid #0ea5e9;
+    }
+    .skill-category h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #6366f1;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .skill-category p {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.6;
+    }
+    /* Experience */
+    .experience-item {
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .experience-item:last-child {
+      border-bottom: none;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+    }
+    .job-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+    }
+    .job-date {
+      font-size: 12px;
+      color: #666;
+      background: #f0f0f0;
+      padding: 2px 10px;
+      border-radius: 12px;
+    }
+    .company-info {
+      font-size: 13px;
+      color: #0ea5e9;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .company-description {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+    .responsibilities {
+      font-size: 12px;
+      color: #555;
+      margin-left: 14px;
+    }
+    .responsibilities li {
+      margin-bottom: 6px;
+      list-style: disc;
+    }
+    /* Education & Certifications */
+    .edu-item {
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .edu-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .edu-degree {
+      font-size: 13px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 4px;
+    }
+    .edu-school {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 2px;
+    }
+    .edu-year {
+      font-size: 11px;
+      color: #999;
+    }
+    /* Certifications */
+    .cert-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      font-size: 12px;
+      color: #555;
+    }
+    .cert-item {
+      background: #f9f9f9;
+      padding: 8px 12px;
+      border-radius: 4px;
+      border-left: 2px solid #f59e0b;
+    }
+    /* Projects Table */
+    .projects-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      margin-top: 12px;
+    }
+    .projects-table th {
+      background: #f0f4ff;
+      padding: 10px;
+      text-align: left;
+      font-weight: 700;
+      color: #6366f1;
+      border-bottom: 2px solid #6366f1;
+    }
+    .projects-table td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #e8e8e8;
+      color: #555;
+    }
+    .projects-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    /* Achievements */
+    .achievements-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .achievement-badge {
+      background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+    }
+    /* Footer */
+    .resume-footer {
+      background: #f0f4ff;
+      padding: 20px 30px;
+      border-top: 2px solid #6366f1;
+      text-align: center;
+      font-size: 11px;
+      color: #666;
+    }
+    /* Print Styles */
+    @media print {
+      body {
+        background: white;
+      }
+      .resume-container {
+        box-shadow: none;
+        margin: 0;
+      }
+      .print-button {
+        display: none;
+      }
+    }
+    .print-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #6366f1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      z-index: 100;
+    }
+    .print-button:hover {
+      background: #4f46e5;
+    }
+    @media (max-width: 768px) {
+      .resume-container {
+        margin: 0;
+        border-radius: 0;
+      }
+      .resume-header {
+        padding: 30px 20px;
+      }
+      .resume-header h1 {
+        font-size: 28px;
+      }
+      .resume-content {
+        padding: 20px;
+      }
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      .cert-list {
+        grid-template-columns: 1fr;
+      }
+      .job-header {
+        flex-direction: column;
+      }
+      .projects-table {
+        font-size: 11px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <h1>Manpreet Kaur</h1>
-            <div class="title">AI & Data Engineering Leader</div>
-            <div class="contact-info">
-                <span>📧 manjeet4u85@hotmail.com</span>
-                <span>📞 +61 451 234 567</span>
-                <span>📍 Sydney, NSW, Australia</span>
-                <span>🔗 LinkedIn | GitHub</span>
-            </div>
-        </div>
-
-        <!-- Content -->
-        <div class="content">
-            <!-- Executive Summary -->
-            <section class="section">
-                <h2 class="section-title">Professional Summary</h2>
-                <p style="color: #555; line-height: 1.8;">
-                    AI & Data Engineering Leader with 13+ years of experience delivering enterprise-scale AI, NLP, GenAI, and data solutions. Proven track record of designing and implementing intelligent systems across financial services, insurance, real estate, and technology sectors in the APAC region. Strong expertise in Azure AI ecosystems, Python, and scalable data architectures. Currently building AI-powered recruitment and automation solutions. Committed to driving digital transformation and innovation across Australian and global markets.
-                </p>
-            </section>
-
-            <!-- Core Competencies -->
-            <section class="section">
-                <h2 class="section-title">Core Competencies</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4>AI & Machine Learning</h4>
-                        <ul class="skill-list">
-                            <li>Generative AI (LLMs, GPT-4, Claude)</li>
-                            <li>Retrieval-Augmented Generation (RAG)</li>
-                            <li>NLP & Text Analytics</li>
-                            <li>Computer Vision & OCR</li>
-                            <li>Predictive Analytics</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <h4>Cloud & Infrastructure</h4>
-                        <ul class="skill-list">
-                            <li>Microsoft Azure (95%+ proficiency)</li>
-                            <li>Azure OpenAI & Cognitive Search</li>
-                            <li>Azure Functions & Logic Apps</li>
-                            <li>Kubernetes & Docker</li>
-                            <li>CI/CD Pipelines</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <h4>Programming & Frameworks</h4>
-                        <ul class="skill-list">
-                            <li>Python (95%+ proficiency)</li>
-                            <li>Flask & FastAPI</li>
-                            <li>SQL (90%+ proficiency)</li>
-                            <li>C# & .NET (90%+ proficiency)</li>
-                            <li>JavaScript & TypeScript</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <h4>Business & Automation</h4>
-                        <ul class="skill-list">
-                            <li>Power Automate & Power Apps</li>
-                            <li>Bot Framework & Conversational AI</li>
-                            <li>RPA (UiPath, Automation Anywhere)</li>
-                            <li>Business Process Optimization</li>
-                            <li>Enterprise Integration</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <h4>Data & Analytics</h4>
-                        <ul class="skill-list">
-                            <li>Data Engineering & ETL/ELT</li>
-                            <li>Tableau & Power BI</li>
-                            <li>Azure Cosmos DB & Data Lake</li>
-                            <li>Database Design & Optimization</li>
-                            <li>Real-time Analytics</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <h4>Methodologies</h4>
-                        <ul class="skill-list">
-                            <li>Agile & Scrum</li>
-                            <li>Design Thinking</li>
-                            <li>System Architecture</li>
-                            <li>Technical Leadership</li>
-                            <li>Stakeholder Management</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Professional Experience -->
-            <section class="section">
-                <h2 class="section-title">Professional Experience</h2>
-
-                <div class="entry">
-                    <div class="entry-header">
-                        <div>
-                            <div class="entry-title">Founder & AI Engineering Lead</div>
-                            <div class="entry-subtitle">MS1313 Technologies (Own Venture)</div>
-                        </div>
-                        <div class="entry-date">2024 – Present</div>
-                    </div>
-                    <div class="entry-description">
-                        <p>Building AI-powered recruitment and automation solutions for APAC market:</p>
-                        <div class="achievements">
-                            <h4>Key Achievements:</h4>
-                            <ul>
-                                <li>Architected full-stack GenAI recruitment platform with LLM integration, resume matching (90%+ accuracy), and multi-agent automation</li>
-                                <li>Developed intelligent interview scheduling system with calendar integration and automated interview conduct</li>
-                                <li>Created AI-powered candidate assessment engine using RAG and semantic search (Azure Cognitive Search)</li>
-                                <li>Implemented Azure OpenAI integration for resume evaluation and job matching</li>
-                                <li>3+ clients on-boarded; 100% automated recruitment pipeline</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-header">
-                        <div>
-                            <div class="entry-title">Technical Lead, AI & Automation</div>
-                            <div class="entry-subtitle">Happiest Minds Technologies</div>
-                        </div>
-                        <div class="entry-date">2013 – 2024 (11 Years)</div>
-                    </div>
-                    <div class="entry-description">
-                        <p>Led AI, NLP, and enterprise automation initiatives across 6+ global clients:</p>
-                        <div class="achievements">
-                            <h4>Key Achievements:</h4>
-                            <ul>
-                                <li>Led enterprise chatbot development (3+ production deployments) serving 10,000+ concurrent users</li>
-                                <li>Built contract intelligence system using AI Builder & Cognitive Search—extracted data with 95% accuracy across 50,000+ contracts</li>
-                                <li>Designed NLP pipeline for entity recognition, sentiment analysis, and document classification</li>
-                                <li>Architected data lake solution for ETL/ELT processing 10GB+ daily data streams</li>
-                                <li>Mentored 5+ junior engineers; delivered 50+ automation projects reducing manual effort by 60%</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-header">
-                        <div>
-                            <div class="entry-title">Senior Software Developer</div>
-                            <div class="entry-subtitle">Laird Technologies</div>
-                        </div>
-                        <div class="entry-date">2012 – 2013</div>
-                    </div>
-                    <div class="entry-description">
-                        <p>Developed enterprise solutions for manufacturing & technology sectors:</p>
-                        <div class="achievements">
-                            <h4>Key Achievements:</h4>
-                            <ul>
-                                <li>Built SharePoint search components and migration utilities</li>
-                                <li>Designed and deployed enterprise integration solutions</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Featured Projects -->
-            <section class="section">
-                <h2 class="section-title">Featured Projects</h2>
-
-                <div class="entry">
-                    <div class="entry-title">GenAI Flask Recruitment Platform (2024)</div>
-                    <div class="entry-subtitle">Full-Stack AI Developer | 1 Client</div>
-                    <div class="entry-description">
-                        <p>End-to-end AI-powered recruitment portal with LLM integration and multi-agent automation:</p>
-                        <div class="achievements">
-                            <ul>
-                                <li>Resume-to-job matching with 90%+ accuracy using RAG</li>
-                                <li>Multi-agent system for automated interview scheduling</li>
-                                <li>Vector database for semantic search</li>
-                                <li>Azure OpenAI integration for intelligent recommendations</li>
-                                <li><strong>Stack:</strong> Flask, Python, Azure OpenAI, GPT-4, RAG, Semantic Search</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-title">Computer Vision & Document Intelligence (2024)</div>
-                    <div class="entry-subtitle">AI Engineer | 1 Client</div>
-                    <div class="entry-description">
-                        <p>AI-powered document processing with OCR and object detection:</p>
-                        <div class="achievements">
-                            <ul>
-                                <li>Document extraction pipeline using Azure Computer Vision & Document Intelligence</li>
-                                <li>Implemented object detection for images using Python</li>
-                                <li><strong>Stack:</strong> Azure Computer Vision, OCR, Python, Flask</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-title">Speech Services Integration (2024)</div>
-                    <div class="entry-subtitle">AI Engineer</div>
-                    <div class="entry-description">
-                        <p>Text-to-Speech and Speech-to-Text services integration:</p>
-                        <div class="achievements">
-                            <ul>
-                                <li>Azure Speech Services for multilingual processing</li>
-                                <li>Voice-based interactions and audio processing</li>
-                                <li><strong>Stack:</strong> Azure Speech Services, TTS, STT, Python</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-title">AI Contract Intelligence System (2021-2023)</div>
-                    <div class="entry-subtitle">Architecture & Lead Developer | 1 Client</div>
-                    <div class="entry-description">
-                        <p>Enterprise-scale contract data extraction using AI:</p>
-                        <div class="achievements">
-                            <ul>
-                                <li>Automated contract data extraction with 95% accuracy</li>
-                                <li>AI Builder for intelligent document processing</li>
-                                <li>Azure Cognitive Search for semantic querying</li>
-                                <li>Power Automate integration for workflow automation</li>
-                                <li>Processed 50,000+ contracts; 70% reduction in manual review time</li>
-                                <li><strong>Stack:</strong> AI Builder, Cognitive Search, Power Automate, JSON, Azure Functions</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Certifications & Awards -->
-            <section class="section">
-                <h2 class="section-title">Certifications</h2>
-                <div class="certifications">
-                    <div class="cert-card">
-                        <h4>Microsoft Certified: Azure Fundamentals</h4>
-                        <p>AZ-900 | 2022</p>
-                    </div>
-                    <div class="cert-card">
-                        <h4>Microsoft Certified: Power Platform Fundamentals</h4>
-                        <p>PL-900 | 2021</p>
-                    </div>
-                    <div class="cert-card">
-                        <h4>Microsoft Certified: Azure AI Engineer Associate</h4>
-                        <p>AI-102 | In Progress - 90+ Learn Modules</p>
-                    </div>
-                    <div class="cert-card">
-                        <h4>SharePoint Developer Certification</h4>
-                        <p>MCSD | 2013</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Awards & Recognition -->
-            <section class="section">
-                <h2 class="section-title">Awards & Recognition</h2>
-                <div class="entry">
-                    <ul class="skill-list">
-                        <li><strong>Happiest Minds Technologies:</strong> Technical Excellence Award (2023) – Recognized for GenAI implementations</li>
-                        <li><strong>APAC Leadership:</strong> Innovation & Mentorship (2022) – Led digital transformation across 6+ clients</li>
-                        <li><strong>Featured Speaker:</strong> Azure AI and GenAI workshops for enterprise clients</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Education -->
-            <section class="section">
-                <h2 class="section-title">Education</h2>
-                <div class="entry">
-                    <div class="entry-header">
-                        <div>
-                            <div class="entry-title">Bachelor of Engineering (Honours)</div>
-                            <div class="entry-subtitle">Computer Science & Engineering</div>
-                        </div>
-                        <div class="entry-date">Completed</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Key Metrics -->
-            <section class="section">
-                <h2 class="section-title">Impact Metrics</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-                    <div style="background: #f0f4ff; padding: 15px; border-radius: 8px; text-align: center;">
-                        <div style="font-size: 1.8em; color: #667eea; font-weight: bold;">13+</div>
-                        <div style="color: #555; font-size: 0.9em;">Years Experience</div>
-                    </div>
-                    <div style="background: #f0f4ff; padding: 15px; border-radius: 8px; text-align: center;">
-                        <div style="font-size: 1.8em; color: #667eea; font-weight: bold;">12+</div>
-                        <div style="color: #555; font-size: 0.9em;">Projects Delivered</div>
-                    </div>
-                    <div style="background: #f0f4ff; padding: 15px; border-radius: 8px; text-align: center;">
-                        <div style="font-size: 1.8em; color: #667eea; font-weight: bold;">10+</div>
-                        <div style="color: #555; font-size: 0.9em;">Global Clients</div>
-                    </div>
-                    <div style="background: #f0f4ff; padding: 15px; border-radius: 8px; text-align: center;">
-                        <div style="font-size: 1.8em; color: #667eea; font-weight: bold;">95%+</div>
-                        <div style="color: #555; font-size: 0.9em;">Client Satisfaction</div>
-                    </div>
-                </div>
-            </section>
-        </div>
+  <button class="print-button" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  
+  <div class="resume-container">
+    <!-- Header -->
+    <div class="resume-header">
+      <h1>Manpreet Kaur</h1>
+      <div class="title">Data Analyst & Business Intelligence Specialist</div>
+      <div class="contact-info">
+        <span>📧 kariermanpreet@gmail.com</span>
+        <span>📱 +61 469 832 088</span>
+        <span>📍 Melbourne, VIC 3064, Australia</span>
+      </div>
     </div>
+
+    <!-- Main Content -->
+    <div class="resume-content">
+      <!-- Professional Summary -->
+      <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <div class="professional-summary">
+          Highly proficient Business Intelligence and Data Analytics professional with 5+ years of extensive experience delivering impactful insights and strategic solutions. Proven expertise in data analysis, visualization, and business intelligence across FMCG, Pharmaceutical, Banking, and Technology sectors. Strong technical background in Python, R, SQL, Power BI, and Tableau. Demonstrated ability to transform complex datasets into actionable business insights, drive process improvements, and lead cross-functional teams. Currently based in Melbourne, Australia, with a proven track record of delivering enterprise-scale analytics solutions.
+        </div>
+      </div>
+
+      <!-- Key Skills -->
+      <div class="section">
+        <h2 class="section-title">Key Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Programming & Data Languages</h4>
+            <p>Python, R Programming, SQL Server, T-SQL, Excel (Advanced with Macros)</p>
+          </div>
+          <div class="skill-category">
+            <h4>BI & Visualization Tools</h4>
+            <p>Tableau, Power BI, SSAS (SQL Server Analysis Services), Tableau Server Administration</p>
+          </div>
+          <div class="skill-category">
+            <h4>Data & Analytics</h4>
+            <p>Data Warehousing, ETL Design, Data Mining, Cleaning & Transformation, Statistical Analysis</p>
+          </div>
+          <div class="skill-category">
+            <h4>Professional Competencies</h4>
+            <p>Lean Methodology, Requirement Gathering, Project Management, Stakeholder Management, Problem Solving</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Experience -->
+      <div class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="experience-item">
+          <div class="job-header">
+            <div class="job-title">Analyst</div>
+            <div class="job-date">Mar 2020 - Present</div>
+          </div>
+          <div class="company-info">INFONYX, Melbourne, Australia</div>
+          <div class="company-description">
+            Leading analytics partner delivering end-to-end data warehousing, automation, and reporting solutions. Specializes in client data strategy, custom analytics processes, and scalable intelligence platforms.
+          </div>
+          <ul class="responsibilities">
+            <li>Analyse and document client requirements; develop comprehensive solution architectures</li>
+            <li>Design, develop, and implement Tableau dashboards and reporting applications per client specifications</li>
+            <li>Manage large datasets: cleaning, transformation, and preparation for analytical purposes</li>
+            <li>Administer Tableau Server: installation, maintenance, deployment, and issue resolution</li>
+            <li>Lead dashboard development teams; mentor junior developers on best practices</li>
+            <li>Conduct formal user training sessions and comprehensive documentation for knowledge transfer</li>
+            <li>Handle client relationships; manage Tableau Server tickets and system-level issues</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="job-header">
+            <div class="job-title">Senior Associate</div>
+            <div class="job-date">Mar 2015 - Feb 2018</div>
+          </div>
+          <div class="company-info">Genpact Pvt Ltd, Bangalore, India</div>
+          <div class="company-description">
+            Market research and analytics firm serving global brands including Princes, John West, Aunt Bessies, Dr Oetker, Danone, with insights on customer behaviour and market dynamics.
+          </div>
+          <ul class="responsibilities">
+            <li>Identified business requirements; developed analytical frameworks and project methodologies</li>
+            <li>Conducted market, competitor, and product analysis across FMCG, Healthcare, Pharma, and Retail domains</li>
+            <li>Developed KPIs and reporting strategies; established dimension models for account reviews</li>
+            <li>Performed customer analytics: footfall conversion, upsell opportunities, NPS, survey analysis</li>
+            <li>Created executive reports and strategic recommendations based on detailed data analysis</li>
+            <li>Managed key accounts and stakeholder relationships; oversaw project delivery and quality</li>
+            <li>Mentored junior consultants on analytical techniques and business problem-solving</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="job-header">
+            <div class="job-title">Associate</div>
+            <div class="job-date">Jul 2013 - Mar 2015</div>
+          </div>
+          <div class="company-info">Infiniti Research Pvt Ltd, Bangalore, India</div>
+          <div class="company-description">
+            Strategic insights firm providing customized market research, competitive analysis, and business intelligence across multiple industries with global reach.
+          </div>
+          <ul class="responsibilities">
+            <li>Conducted primary and secondary research across industries; performed market and competitor analysis</li>
+            <li>Created business models: SWOT, PESTEL, Porter's Five Forces analyses</li>
+            <li>Led price forecasting and sourcing/procurement projects; delivered end-to-end solutions</li>
+            <li>Developed process modelling techniques and system specifications for business solutions</li>
+            <li>Gathered requirements, documented business needs, and ensured timely quality deliverables</li>
+            <li>Supervised project development and execution with clients for successful delivery</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="job-header">
+            <div class="job-title">Associate</div>
+            <div class="job-date">Jul 2012 - Jul 2013</div>
+          </div>
+          <div class="company-info">Lucintel Pvt Ltd, Chhattisgarh, India</div>
+          <div class="company-description">
+            Automotive industry research and analysis firm specializing in competitive analysis and strategic insights.
+          </div>
+          <ul class="responsibilities">
+            <li>Performed market sizing, trend analysis, and forecasting using correlation and regression</li>
+            <li>Analysed competitor annual reports and business presentations</li>
+            <li>Developed supply chain and value chain models specific to automotive industry</li>
+            <li>Created cost structure and profit analyses; identified business opportunities and strategies</li>
+            <li>Ensured data integrity; prepared clean and accurate documentation for publication</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="edu-item">
+          <div class="edu-degree">Master of Business Analytics</div>
+          <div class="edu-school">Latrobe University, Melbourne, Australia</div>
+          <div class="edu-year">2018 - 2019</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-degree">Master of Business Administration (MBA)</div>
+          <div class="edu-school">Bhilai Institute of Technology, Chhattisgarh, India</div>
+          <div class="edu-year">2010 - 2012</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+          <div class="edu-school">St Thomas College, Chhattisgarh, India</div>
+          <div class="edu-year">2007 - 2010</div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="section">
+        <h2 class="section-title">Professional Certifications & Achievements</h2>
+        <div class="cert-list">
+          <div class="cert-item">✓ Lean Certified</div>
+          <div class="cert-item">✓ SQL Programming</div>
+          <div class="cert-item">✓ SQL: Data Reporting & Analysis</div>
+          <div class="cert-item">✓ Cloud Computing: IT Pro to Microsoft Cloud</div>
+          <div class="cert-item">🏆 Customer Satisfaction Award (Genpact)</div>
+          <div class="cert-item">🏆 Gold Award (Genpact)</div>
+          <div class="cert-item">🏆 Cheers Award (Genpact)</div>
+          <div class="cert-item">🏆 Emerging Excellence Award (Genpact)</div>
+        </div>
+      </div>
+
+      <!-- Major Projects -->
+      <div class="section">
+        <h2 class="section-title">Major Projects</h2>
+        <table class="projects-table">
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Industry</th>
+              <th>Client</th>
+              <th>Region</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Malaria Drug & RDT Market Analysis</td>
+              <td>Pharmaceutical</td>
+              <td>Novartis</td>
+              <td>South Africa</td>
+            </tr>
+            <tr>
+              <td>Oncology & Gastrointestinal Market</td>
+              <td>Pharmaceutical</td>
+              <td>Sanfoi</td>
+              <td>Europe</td>
+            </tr>
+            <tr>
+              <td>Financial Institute Training Market</td>
+              <td>Banking</td>
+              <td>ORC</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Aerospace M&A Analysis: Selmet Inc.</td>
+              <td>Aerospace</td>
+              <td>MMT</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+              <td>Hospital Connectivity Solutions</td>
+              <td>IT/Technology</td>
+              <td>Amcom Software</td>
+              <td>Asia Pacific</td>
+            </tr>
+            <tr>
+              <td>Automotive Interior Trim Market</td>
+              <td>Automotive</td>
+              <td>Lacks Enterprise</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Electric Two Wheeler Market</td>
+              <td>Automotive</td>
+              <td>MI</td>
+              <td>Asia Pacific</td>
+            </tr>
+            <tr>
+              <td>Scanning Electron Microscope Market</td>
+              <td>Electronics</td>
+              <td>FEI</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+              <td>Telematics & Connected Vehicle Solutions</td>
+              <td>Electronics</td>
+              <td>Masternaut</td>
+              <td>Europe</td>
+            </tr>
+            <tr>
+              <td>Mexican Food Brand Analytics</td>
+              <td>Food & Beverage</td>
+              <td>Fiesta Food</td>
+              <td>USA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="resume-footer">
+      <p>Manpreet Kaur | Melbourne, Australia | kariermanpreet@gmail.com | +61 469 832 088</p>
+      <p style="margin-top: 8px; color: #999;">This resume is optimized for Australian standards and current industry practices in data analytics and business intelligence.</p>
+    </div>
+  </div>
 </body>
 </html>

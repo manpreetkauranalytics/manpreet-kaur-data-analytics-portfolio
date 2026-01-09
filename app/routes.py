@@ -13,10 +13,11 @@ def home():
 @main.route("/portfolio")
 def portfolio():
     sections = {
-        "Tableau Dashboards": "Interactive dashboards demonstrating business insights and data storytelling.",
-        "SQL Analytics": "Business-focused SQL queries for reporting, KPI tracking, and performance analysis.",
-        "Python Data Analysis": "Python scripts for data cleaning, transformation, and preparation.",
-        "Case Studies": "Industry-based analytics case studies across Pharma, Banking, and Automotive domains."
+        "Tableau & Power BI Dashboards": "Enterprise-grade dashboard design and Tableau Server administration for executive reporting and KPI tracking.",
+        "Market & Customer Analytics": "Market research, competitor analysis, and customer insights across FMCG, Pharma, Banking, and Automotive sectors.",
+        "Data Warehousing & ETL": "Data warehouse design, ETL pipeline development, and SQL Server database administration.",
+        "Python & R Analytics": "Statistical analysis, predictive modeling, and data science projects using Python and R.",
+        "Industry Expertise": "20+ major projects across Pharmaceutical, Banking, Automotive, Electronics, Food, Retail, and Technology sectors globally."
     }
     return render_template("portfolio.html", sections=sections)
 
